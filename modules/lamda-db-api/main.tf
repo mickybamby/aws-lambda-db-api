@@ -6,7 +6,7 @@ locals {
     writer = {
       source     = "lambda/writer/index.py"
       policy_arn = "arn:aws:iam::aws:policy/AmazonDynamoDBFullAccess"
-    },
+    }
     reader = {
       source     = "lambda/reader/index.py"
       policy_arn = "arn:aws:iam::aws:policy/AmazonDynamoDBReadOnlyAccess"
